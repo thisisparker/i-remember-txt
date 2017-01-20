@@ -19,8 +19,11 @@ def get_tweets():
     return tweets
 
 def get_next_tweets():
-    with open(NEXT_TWEETS,'r') as f:
-        next_tweets = json.load(f)
+    if os.path.exists(NEXT_TWEETS):
+        with open(NEXT_TWEETS,'r') as f:
+            next_tweets = json.load(f)
+    else:
+        next_tweets = []
     return next_tweets
 
 def write_next_tweets(next_tweets):

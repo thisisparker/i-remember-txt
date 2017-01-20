@@ -1,3 +1,4 @@
 config.yaml
+remember-shuffle.json
 *.txt
 __pycache__/*
