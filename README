@@ -1,0 +1,5 @@
+# @i_remember_txt
+
+[This Twitter bot](@i_remember_txt) tweets random excerpts from Joe Brainard's "I Remember" (1975).
+
+There are 1500 separate "stanzas" of memories in the original text. The prepared subset contains only stanzas that could be easily broken down into 140 character chunks.
