@@ -55,9 +55,10 @@ def main():
     reply_to = 'null'
 
     for i in range(len(tweet_content)):
+        if reply_to != 'null':
+            time.sleep(60)
         response = twitter.update_status(status=tweet_content[i],in_reply_to_status_id=reply_to)
         reply_to = response['id_str']
-        time.sleep(60)
         
 if __name__ == "__main__":
     main()
