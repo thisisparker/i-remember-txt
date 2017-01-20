@@ -43,8 +43,9 @@ def main():
 
     if len(next_tweets) == 0:
         keys = [key for key in tweets.keys()]
-        next_tweet_list == random.shuffle(keys)
-    
+        random.shuffle(keys)
+        next_tweets = keys
+
     tweet_content = tweets[next_tweets.pop(0)]
     write_next_tweets(next_tweets)
 
